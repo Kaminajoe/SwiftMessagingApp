@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  messagingApp
 //
-//  Created by user137447 on 5/24/18.
+//  Created by Joel Aikens on 5/24/18.
 //  Copyright © 2018 CoatMangoProductions. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure();
         return true
     }
 
